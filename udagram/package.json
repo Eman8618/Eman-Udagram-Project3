@@ -1,0 +1,14 @@
+
+{
+    "scripts": {
+      "bkend-install":"cd udagam-api&&npm run",
+      "frend-install":"cd udagram-frontend&&npm run",
+      "bkend-build":"cd udagam-api&&npm run build",
+      "frend-build":"cd udagram-frontend&&npm run build",
+      "bkend-test":"cd udagram-frontend&&npm run test",
+      "frend-test":"cd udagram-frontend&&npm run test",
+      "bkend-deploy":"cd udagram-api/www && eb init project-udagram-api -r $AWS_DEFAULT_REGION -p node.js && eb use project-udagram-api-dev &&  eb setenv POSTGRES_HOST=$POSTGRES_HOST POSTGRES_DB=$POSTGRES_DB POSTGRES_USER=$POSTGRES_USER POSTGRES_PASSWORD=$POSTGRES_PASSWORD BCRYPT_PASSWORD=$BCRYPT_PASSWORD TOKEN_SECRET=$TOKEN_SECRET SALT_ROUNDS=$SALT_ROUNDS ENV=$ENV PORT=$PORT && eb deploy",
+      "frend-deploy":"aws s3 cp udagram-frontend/www/ s3://my-bucketddd1123 --recursive"
+    },
+    "devDependencies": {}
+}
