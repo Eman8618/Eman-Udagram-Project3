@@ -1,8 +1,8 @@
 
 {
     "scripts": {
-      "bkend-install":"cd udagam-api&&npm run",
-      "frend-install":"cd udagram-frontend&&npm run",
+      "bkend-install":"cd udagam-api&&npm install",
+      "frend-install":"cd udagram-frontend&&npm install",
       "bkend-build":"cd udagam-api&&npm run build",
       "frend-build":"cd udagram-frontend&&npm run build",
       "bkend-test":"cd udagram-frontend&&npm run test",
