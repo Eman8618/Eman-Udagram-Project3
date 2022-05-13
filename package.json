@@ -1,9 +1,9 @@
 
 {
     "scripts": {
-      "bkend-directory":"cd udagam-api ","bkend-install": "npm install",
+      "bkend-directory":"cd udagam-api ","bkend-install": "npm install","bkend-build":"npm run build",
       "frend-directory":"cd udagram-frontend ","frend-install":" npm install",
-      "bkend-directoryb":"cd udagram-api ","bkend-build":"npm run build",
+      "bkend-directoryb":"cd udagram-api ",
       "frend-directoryb":"cd udagram-frontend ","frend-build":" npm run build",
       "bkend-directoryt":"cd udagram-api ","bkend-test":" npm run test",
       "frend-directoryt":"cd udagram-frontend ","frend-test":"npm run test",
