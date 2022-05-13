@@ -50,5 +50,4 @@ workflows:
           filters:
             branches:
               only: [main]
-              artifact: www/Archive.zip
 
