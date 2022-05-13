@@ -31,7 +31,7 @@ jobs:
      
       - run:
           name: Frontend build
-          command: cd udagram-frontend&&npm install&&npm install --force&&npm run build
+          command: cd udagram-frontend&&npm install --legacy-peer-deps --save&&npm install&&npm run build
       - run: 
           name: Backend test
           command: cd udagram-api&&npm install&&&&npm run test
