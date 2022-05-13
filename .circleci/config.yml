@@ -24,18 +24,22 @@ jobs:
       - run:
           name: Install Frontend  dependencies
           command: npm run frend-install
+
+      - run:
+          name: backend build
+          command: npm run bkend-directory&& npm run bkend-build
      
       - run:
           name: Frontend build
-          command: npm run frend-directory&&frend-build
+          command: npm run frend-directory&& npm run frend-build
       - run: 
           name: Backend test
-          command: npm run bkend-test
+          command: npm run bkend-directory&&npm run bkend-test
       - run:
           name: Frontend test
-          command: npm run frend-test
+          command: npm run frend-directory&&npm run frend-test
       - run:
-          name: Backend deploy
+          name:  Backend deploy
           command: npm run bkend-deploy
       - run:
           name: Frontend deploy
