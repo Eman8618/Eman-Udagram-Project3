@@ -20,14 +20,14 @@ jobs:
      
       - run:
           name: Install Backend dependencies
-          command: npm run bkend-install
+          command: npm run bkend-directory&&npm run bkend-install
       - run:
           name: Install Frontend  dependencies
-          command: npm run frend-install
+          command: npm run frend-directory&&npm run frend-install
 
       - run:
           name: backend build
-          command: npm run bkend-build
+          command: npm run bkend-directory&&npm run bkend-build
      
       - run:
           name: Frontend build
