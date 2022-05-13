@@ -1,7 +1,7 @@
 
 {
     "scripts": {
-      "bkend-directory":"cd udagam-api ",
+      "bkend-directory":"cd udagram-api ",
       "bkend-install": "npm install",
       "bkend-build":"npm run build",
       "bkend-test":" npm run test",
