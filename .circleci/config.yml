@@ -27,7 +27,7 @@ jobs:
      
       - run:
           name: Frontend build
-          command: npm run frend-build
+          command: npm run frend-directory&&frend-build
       - run: 
           name: Backend test
           command: npm run bkend-test
