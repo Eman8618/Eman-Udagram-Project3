@@ -27,11 +27,11 @@ jobs:
 
       - run:
           name: backend build
-          command: cd udagram-api&&tsc&&npm run build
+          command: cd udagram-api&&npm install typescript -g&&npm run build
      
       - run:
           name: Frontend build
-          command: cd udagram-frontend&& npm run frend-build
+          command: cd udagram-frontend&& npm run build
       - run: 
           name: Backend test
           command: npm run bkend-directory&&npm run bkend-test
