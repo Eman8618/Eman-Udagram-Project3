@@ -27,7 +27,7 @@ jobs:
 
       - run:
           name: backend build
-          command: cd udagram-api&&npm install typescript -g&&npm run build
+          command: cd udagram-api&&npm install&&npm run build
      
       - run:
           name: Frontend build
