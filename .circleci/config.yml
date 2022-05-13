@@ -28,17 +28,19 @@ jobs:
       - run:
           name: backend build
           command: cd udagram-api&&npm install&&npm run build
+      
+      - run:
+          name: Frontend build
+          command: cd udagram-frontend&& npm config set legacy-peer-deps true&&npm install&&npm run build
+      
       - run: 
           name: Backend test
           command: cd udagram-api&&npm install&&npm run test
       - run:
           name: Frontend test
           no_output_timeout: 30m
-          command: cd udagram-frontend&&npm install&&npm run test
-     
-      - run:
-          name: Frontend build
-          command: cd udagram-frontend&& npm config set legacy-peer-deps true&&npm install&&npm run build
+          command: cd udagram-frontend&&npm install&&npm config set legacy-peer-deps true&&npm run test
+      
       
       - run:
           name:  Backend deploy
