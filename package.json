@@ -7,7 +7,7 @@
       "frend-build":"cd udagram-frontend && npm run build",
       "bkend-test":"cd udagram-frontend && npm run test",
       "frend-test":"cd udagram-frontend && npm run test",
-      "bkend-deploy":"cd udagram-api/www && eb init project-udagram-api -r $region -p node.js && eb use project-udagram-api-dev &&  eb setenv POSTGRES_HOST=$host POSTGRES_DB=$aws_database POSTGRES_USER=$username POSTGRES_PASSWORD=$password BCRYPT_PASSWORD=$BCRYPT_PASSWORD JWT_SECRET=$JWT_SECRET SALT_ROUNDS=$SALT_ROUNDS ENV=$ENV PORT=$dbport && eb deploy",
+      "bkend-deploy":"cd udagram-api/www && eb init project-udagram-api -r $region $AWS_SECRET_ACCESS_ID $AWS_SECRET_ACCESS_KEY -p node.js && eb use project-udagram-api-dev &&  eb setenv POSTGRES_HOST=$host POSTGRES_DB=$aws_database POSTGRES_USER=$username POSTGRES_PASSWORD=$password BCRYPT_PASSWORD=$BCRYPT_PASSWORD JWT_SECRET=$JWT_SECRET SALT_ROUNDS=$SALT_ROUNDS ENV=$ENV PORT=$dbport && eb deploy",
       "frend-deploy":"aws s3 cp --recursive --acl public-read udagram-frontend/www/ s3://emanudagrambucket/ "
     },
     "devDependencies": {}
