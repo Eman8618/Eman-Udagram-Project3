@@ -28,6 +28,13 @@ jobs:
       - run:
           name: backend build
           command: cd udagram-api&&npm install&&npm run build
+      - run: 
+          name: Backend test
+          command: cd udagram-api&&npm install&&npm run test
+      - run:
+          name: Frontend test
+          no_output_timeout: 30m
+          command: cd udagram-frontend&&npm install&&npm run test
      
       - run:
           name: Frontend build
@@ -39,12 +46,7 @@ jobs:
       - run:
           name: Frontend deploy
           command: npm run frend-deploy
-      - run: 
-          name: Backend test
-          command: cd udagram-api&&npm install&&npm run test
-      - run:
-          name: Frontend test
-          command: cd udagram-frontend&&npm install&&npm run test
+      
      
 workflows:
   build-deploy:
