@@ -1,7 +1,7 @@
 
 {
     "scripts": {
-      "bkend-install":"cd udagam-api && npm install",
+      "bkend-directory":"cd udagam-api ","bkend-install": "npm install",
       "frend-install":"cd udagram-frontend && npm install",
       "bkend-build":"cd udagram-api && npm run build",
       "frend-build":"cd udagram-frontend && npm run build",
