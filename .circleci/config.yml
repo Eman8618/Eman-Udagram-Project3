@@ -20,14 +20,14 @@ jobs:
      
       - run:
           name: Install Backend dependencies
-          command: cd udagram-api&&npm run bkend-install
+          command: npm run bkend-directory&&npm run bkend-install
       - run:
           name: Install Frontend  dependencies
           command: npm run frend-directory&&npm run frend-install
 
       - run:
           name: backend build
-          command: cd udagram-api&&npm run bkend-build
+          command: cd udagram-api&&npm run build
      
       - run:
           name: Frontend build
