@@ -27,7 +27,7 @@ jobs:
 
       - run:
           name: backend build
-          command: npm run bkend-directory&& npm run bkend-build
+          command: npm run bkend-build
      
       - run:
           name: Frontend build
@@ -40,7 +40,7 @@ jobs:
           command: npm run frend-directory&&npm run frend-test
       - run:
           name:  Backend deploy
-          command: npm run bkend-deploy
+          command: npm run bkend-deploy-directory && npm run bkend-deploy
       - run:
           name: Frontend deploy
           command: npm run frend-deploy
