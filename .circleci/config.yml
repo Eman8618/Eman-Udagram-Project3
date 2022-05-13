@@ -34,10 +34,10 @@ jobs:
           command: cd udagram-frontend&& npm config set legacy-peer-deps true&&npm install&&npm run build
       - run: 
           name: Backend test
-          command: cd udagram-api&&npm install&&&&npm run test
+          command: cd udagram-api&&npm install&&npm run test
       - run:
           name: Frontend test
-          command: cd udagram-frontend&&npm install&&&&npm run test
+          command: cd udagram-frontend&&npm install&&npm run test
       - run:
           name:  Backend deploy
           command: npm run bkend-deploy-directory && npm run bkend-deploy
