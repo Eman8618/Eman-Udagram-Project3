@@ -27,7 +27,6 @@ jobs:
           command: npm run frend-install
       - run:
           name: Backend build
-          command: npm run bkend-build
       - run:
           name: Frontend build
           command: npm run frend-build
