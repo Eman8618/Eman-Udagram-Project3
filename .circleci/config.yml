@@ -31,13 +31,13 @@ jobs:
      
       - run:
           name: Frontend build
-          command: cd udagram-frontend&& npm run build
+          command: cd udagram-frontend&&npm install&&npm run build
       - run: 
           name: Backend test
-          command: npm run bkend-directory&&npm run bkend-test
+          command: cd udagram-api&&npm install&&&&npm run test
       - run:
           name: Frontend test
-          command: npm run frend-directory&&npm run frend-test
+          command: cd udagram-frontend&&npm install&&&&npm run test
       - run:
           name:  Backend deploy
           command: npm run bkend-deploy-directory && npm run bkend-deploy
