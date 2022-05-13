@@ -1,12 +1,14 @@
 
 {
     "scripts": {
-      "bkend-directory":"cd udagam-api ","bkend-install": "npm install","bkend-build":"npm run build",
+      "bkend-directory":"cd udagam-api ",
+      "bkend-install": "npm install",
+      "bkend-build":"npm run build",
+      "bkend-test":" npm run test",
       "frend-directory":"cd udagram-frontend ","frend-install":" npm install",
-      "bkend-directoryb":"cd udagram-api ",
-      "frend-directoryb":"cd udagram-frontend ","frend-build":" npm run build",
-      "bkend-directoryt":"cd udagram-api ","bkend-test":" npm run test",
-      "frend-directoryt":"cd udagram-frontend ","frend-test":"npm run test",
+      "frend-build":" npm run build",
+      "frend-test":"npm run test",
+      
       "bkend-deploy":"cd udagram-api/www && eb init project-udagram-api -r $region $AWS_SECRET_ACCESS_ID $AWS_SECRET_ACCESS_KEY -p node.js && eb use project-udagram-api-dev &&  eb setenv POSTGRES_HOST=$host POSTGRES_DB=$aws_database POSTGRES_USER=$username POSTGRES_PASSWORD=$password BCRYPT_PASSWORD=$BCRYPT_PASSWORD JWT_SECRET=$JWT_SECRET SALT_ROUNDS=$SALT_ROUNDS ENV=$ENV PORT=$dbport && eb deploy",
       "frend-deploy":"aws s3 cp --recursive --acl public-read udagram-frontend/www/ s3://emanudagrambucket/ "
     },
