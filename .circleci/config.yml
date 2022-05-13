@@ -22,9 +22,6 @@ jobs:
           name: Install Backend dependencies
           command: npm run bkend-install
       - run:
-          name: Backend build
-          command: npm run bkend-build
-      - run:
           name: Install Frontend  dependencies
           command: npm run frend-install
      
