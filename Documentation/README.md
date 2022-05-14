@@ -4,7 +4,7 @@ I used This application that is provided as an alternative starter project from 
 
 This Application has frontend which created by Angular ,backend has database created by postgres .The main function , the user accesses the client URL so he can register or login to database after registeration the user will login directly and access home page so he can creat a post with attached image.
 ## Application link
-
+`http://udagramemanbucket.s3-website-us-east-1.amazonaws.com/index.html`
 ## Udagram Architecture 
 ![image info](./Documentation/Udagram-Architecture.jpg)
 Read udagram-infrastructure for more details
