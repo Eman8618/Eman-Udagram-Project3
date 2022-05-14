@@ -14,7 +14,7 @@ Read pipeline for details
 
 ## Getting Started
 
-1. Clone this repo from github: `https://github.com/Eman8618/Em-Udagram-Project3`.
+1. Clone this repo from github: `https://github.com/Eman8618/Eman-Udagram-Project3`.
 2. Open a terminal and navigate to the root of the repo 
 3. follow the instructions in the installation step
 
@@ -41,8 +41,8 @@ Provision the necessary AWS services needed for running the application:
 1. In AWS, provision a publicly available RDS database running Postgres. 
 2. In AWS, provision a s3 bucket for hosting the uploaded files. 
 3. Export the ENV variables needed or use a package like [dotnev](https://www.npmjs.com/package/dotenv)/.
-4. From the root of the repo, navigate udagram-api folder `cd Em-Udagram-Project3/udagram-api` to install the node_modules `npm install`. After installation is done start the api in dev mode with `npm run dev`.
-5. Without closing the terminal in step 1, navigate to the udagram-frontend `cd Em-Udagram-Project3/udagram-frontend` to install the node_modules `npm install`. After installation is done start the api in dev mode with `npm run start`.
+4. From the root of the repo, navigate udagram-api folder `cd Eman-Udagram-Project3/udagram-api` to install the node_modules `npm install`. After installation is done start the api in dev mode with `npm run dev`.
+5. Without closing the terminal in step 1, navigate to the udagram-frontend `cd Eman-Udagram-Project3/udagram-frontend` to install the node_modules `npm install`. After installation is done start the api in dev mode with `npm run start`.
 
 ## Testing
 
