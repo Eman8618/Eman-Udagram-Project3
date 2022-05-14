@@ -4,8 +4,8 @@
 
 export const environment = {
   production: false,
-  appName: "Eman-Udagram-Project3",//'Udagram',
-  apiHost:"http://localhost:3000/api/v0"
+  appName: "Eman-Udagram-Project3-updated",//'Udagram',
+  apiHost:"http://udagramemanbucket.s3-website-us-east-1.amazonaws.com/api/v0"//"http://localhost:3000/api/v0"
 };
 
 /*
