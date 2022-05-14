@@ -46,12 +46,7 @@ jobs:
       - run: 
           name: Backend test
           command: cd udagram-api&&npm install&&npm run test
-      - run:
-          name: Frontend test
-          no_output_timeout: 60m
-          command: cd udagram-frontend&&npm install&&npm config set legacy-peer-deps true&&npm run test
       
-     
 workflows:
   build-deploy:
     jobs:
