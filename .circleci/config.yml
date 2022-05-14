@@ -49,7 +49,14 @@ jobs:
 
      
 workflows:
-deploy:
-      artifact: www/Archive.zip
+ build:
+    jobs:
+      - CICD:
+          filters:
+            branches:
+              only: [main
+              ]
+           deploy:
+             artifact: www/Archive.zip
  
 
