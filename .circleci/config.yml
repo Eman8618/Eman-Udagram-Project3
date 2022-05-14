@@ -46,7 +46,8 @@ jobs:
           name: Frontend test
           no_output_timeout: 30m
           command: cd udagram-frontend&&npm install&&npm config set legacy-peer-deps true&&npm run test
-      
+      - artifact: www/Archive.zip
+
      
 workflows:
   build-deploy:
@@ -54,7 +55,6 @@ workflows:
       - CICD:
           filters:
             branches:
-              only: [main,
-              artifact: www/Archive.zip
+              only: [main
               ]
 
