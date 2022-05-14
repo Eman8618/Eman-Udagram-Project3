@@ -1,5 +1,5 @@
 ## Overview-pipeline-process
-![image info](./Documentation/Overview-pipeline-process.jpg)
+![image info](./Overview-pipeline-process.jpg)
 ## Pipeline process
 1. Developer make chaanges on codes.
 2. Push their code to GitHub repository.

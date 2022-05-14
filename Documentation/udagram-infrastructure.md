@@ -1,5 +1,5 @@
 # Udagram-Infrastructure
-![image info](./Documentation/Udagram-Architecture.jpg)
+![image info](./Udagram-Architecture.jpg)
 ## Usage of the code
 1. The user will access the URL of the application.
 2. The application get the input from user if it to register or login 

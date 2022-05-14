@@ -6,10 +6,10 @@ This Application has frontend which created by Angular ,backend has database cre
 ## Application link
 `http://udagramemanbucket.s3-website-us-east-1.amazonaws.com/index.html`
 ## Udagram Architecture 
-![image info](./Documentation/Udagram-Architecture.jpg)
+![image info](./Udagram-Architecture.jpg)
 Read udagram-infrastructure for more details
 ## Overview-pipeline-process
-![image info](./Documentation/Overview-pipeline-process.jpg)
+![image info](./Overview-pipeline-process.jpg)
 Read pipeline for details
 
 ## Getting Started
