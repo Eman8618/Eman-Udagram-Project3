@@ -39,7 +39,7 @@ jobs:
       
       - run:
           name: Frontend deploy
-          command: npm run frend-deploy
+          command: cd udagram-frontend&&npm install tslib@latest --save&&aws s3 cp --recursive --acl public-read udagram-frontend/www/ s3://udagramemanbucket/
       
       
       
