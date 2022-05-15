@@ -31,7 +31,7 @@ jobs:
       
       - run:
           name: Frontend build
-          command: cd udagram-frontend&& npm config set legacy-peer-deps true&&npm install&&npm run build-pro
+          command: cd udagram-frontend&& npm config set legacy-peer-deps true&&npm install&&npm run build
       
       - run:
           name:  Backend deploy
