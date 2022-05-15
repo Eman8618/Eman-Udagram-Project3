@@ -9,7 +9,7 @@ dotenv.config();
 export const config = {
   username: `${process.env.POSTGRES_USERNAME}`,
   password: process.env.POSTGRES_PASSWORD,
-  database: process.env.POSTGRES_DB,
+  database: process.env.AWS_DATABASE,//POSTGRES_DB,
   dbport:Number(process.env.POSTGRES_PORT),
   port: Number(process.env.PORT),
   POSTGRES_HOST: process.env.POSTGRES_HOST,
@@ -23,4 +23,4 @@ export const config = {
   jwt: {
     secret: process.env.JWT_SECRET,
   },
-};
+}
